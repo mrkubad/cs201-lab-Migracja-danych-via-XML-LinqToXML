@@ -44,10 +44,21 @@ Twoim zadaniem jest napisanie w C# aplikacji, która
 * Pewne informacje w nowym formacie są "sztywne" (np. odwołania do schematów `xmlns`). Należy po prostu je tam wprowadzić.
 * W nowym formacie nowy element `<id type="internal" advice="ignore">20190001</id>` bezpośrednio w `<article>` (nie `<article_galley>`): jego wartość jest sklejeniem dwóch ostatnich kodów `doi:`.
 * Część elementów i atrybutów w nowym formacie, to te same, które są w starym, ale ze zmienioną nazwą i w innej lokalizacji drzewa XML.
+* W nowej wersji formatu XML tytuł artykułu rozbity jest na:
+  * właściwy tytuł `<title>` oraz
+  * `<prefix>` będący pierwszym wyrazem tytułu, który jest przedimkiem (w języku angielskim: _The_, _A_ lub _An_)
+  Przykład: tytuł jednego z artykułów `The Influence of Drying Temperature and Moisture of Corn Seeds Planted on Their Damage` powinien zostać rozbity na:
+  
+    ```xml
+    <title locale="en_US">Influence of Drying Temperature and Moisture of Corn Seeds Planted on Their Damage</title>
+    <prefix locale="en_US">The</prefix>
+    ```
+
+  W systemach przetwarzania informacji bibliograficznych, ze względów na poprawność sortowania, stosuje się obecnie takie rozbijanie tytułów. ([_The_ and other common words](https://en.wikipedia.org/wiki/Alphabetical_order#The_and_other_common_words))
 
 ## Cel ćwiczenia
 
-Celem ćwiczenia jest - w oparciu o praktyczny problem - zapoznanie się z technikami przetwarzania dokumentów XML za pomocą bibliotek .NET, ze szczególnym uwzględnieniem _LINQ to XML_. 
+Celem ćwiczenia jest - w oparciu o praktyczny problem - zapoznanie się z technikami przetwarzania dokumentów XML za pomocą bibliotek .NET, ze szczególnym uwzględnieniem _LINQ to XML_.
 
 * [LINQ to XML Overview (C#) @Microsoft](https://docs.microsoft.com/en-Us/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-overview)
 * [Basic Queries (LINQ to XML) (C#) @Microsoft](https://docs.microsoft.com/en-Us/dotnet/csharp/programming-guide/concepts/linq/basic-queries-linq-to-xml)
