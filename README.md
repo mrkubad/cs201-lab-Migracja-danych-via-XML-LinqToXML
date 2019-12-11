@@ -32,11 +32,12 @@ Przykład pochodzi z innego zeszytu [vol. 23, issue 1](https://content.sciendo.c
 Twoim zadaniem jest napisanie w C# aplikacji, która
 
 1. wczyta plik `issue.xml` zawierający metainformacje związane z konkretnym zeszytem (`n` artykułów) w formacie eksportu z OJS 2.x,
-2. we wskazanym folderze utworzy `n` plików zawierających metadane wszystkich artykułów, w formacie importu XML akceptowalnym przez OJS 3.
+2. we wskazanym folderze utworzy `n` plików zawierających metadane wszystkich artykułów, w formacie importu XML akceptowalnym przez OJS 3,
+3. przy realizacji zadania wzorujesz się na przykładowych plikach XML.
 
 **Uwagi:**
 
-* W pliku wynikowym **nie ma** metainformacji związanych z językiem polskim (elementy z atrybutem `locale="pl_PL"`).
+* W plikach wynikowych **nie ma** metainformacji związanych z językiem polskim (elementy z atrybutem `locale="pl_PL"`).
 * Nazwy plików wynikowych to końcowy fragment numeru [doi](https://pl.wikipedia.org/wiki/DOI_(identyfikator_cyfrowy)), odczytany z elementu `<remote src= ...>` dla danego artykułu. Na przykład dla
   `<remote src="https://doi.org/10.1515/agriceng-2019-0001"/>`
   nazwa pliku to `2019-0001.xml`.
