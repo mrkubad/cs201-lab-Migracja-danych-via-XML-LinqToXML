@@ -16,10 +16,10 @@
         <section>
             <title locale="en_US">Articles</title>
             <title locale="pl_PL">Artykuły</title>
-            <abbrev locale="en_US">ART</abbrev>
+            <abbrev locale="en_US">ART</abbrev> <!--section_ref-->
             <abbrev locale="pl_PL">ART</abbrev>
             <article locale="en_US" language="en">
-                <title locale="en_US">Solutions to Pollution Problems of Oil</title>
+                <title locale="en_US">Solutions to Pollution Problems of Oil</title> <!--To trzeba rozbijać jeśli zaczynają się na The lub inne takie-->
                 <title locale="pl_PL">Sposoby zapobiegania zanieczyszczeniom produktów naftowych</title>
                 <abstract locale="en_US">The purpose of the research is to improve the processes of conservation indicators of quality petroleum products (POL). As a hypothesis, it was assumed that the quality of fuel depends on its main quality parameters that most strongly vary during storage and transportation. The methods were applied which are used at the theoretical level of research, such as abstraction, deduction, analysis and synthesis, etc. We presented the main problems of pollution of oil. Moreover, we provided indicators of physical and chemical properties of diesel fuel and motor oil, which characterize their performance and the list of used additives. We analysed the scientific and patent work. We provided solutions to the problem. Correct storage and use of fuel will help maintain its quality parameters and ensure safety and durability of machinery.</abstract>
                 <abstract locale="pl_PL">Celem badań jest poprawa wskaźników procesów ochrony jakości produktów naftowych (paliw i smarów). Sformułowano następującą hipotezę, że jakość paliw i smarów zależy od jego głównych parametrów jakościowych, które najsilniej zmieniają się podczas przechowywania i transportu. Użyto metody stosowanej na poziomie badań teoretycznych, takich jak abstrakcja, dedukcja, analiza i synteza, etc. Głównym problemem zanieczyszczenia ropą naftową, są wskaźniki właściwo-ści fizycznych i chemicznych oleju napędowego i olejów silnikowych, charakteryzujące ich wydajność oraz listę zastosowanych dodatków. Zatem właściwe przechowywanie i wykorzystanie paliw i smarów pomoże utrzymać ich parametry jakościowe i zapewnić bezpieczeństwo oraz trwałość urządzeń pracujących przy ich użyciu.</abstract>
@@ -386,6 +386,7 @@
                 <abstract locale="pl_PL">Przeprowadzono analizę porównawczą produkcji mleka w Polsce i na Białorusi. Przeanalizowano podstawowe tendencje nowoczesnego rozwoju przemysłu mleczarskiego i zaproponowano nowoczesne kierunki innowacyjnej modernizacji procesów produkcji mleka. Na podstawie analizy trendów w światowej produkcji mleka i nowych założeń naukowych dotyczących biosyntezy mleka, opracowano innowacyjne podejście w projektowaniu maszyn w produkcji mleka, uwzględniając parametry techniczne i fizjologiczne.</abstract>
                 <indexing>
                     <subject locale="en_US">milk production; physiologically relaxed process; milking equipment; costs per unit</subject>
+                  <!--keywords-->
                     <subject locale="pl_PL">produkcja mleka; proces technologiczny; maszyny mleczarskie; koszty jednostkowe</subject>
                 </indexing>
                 <author primary_contact="true">
